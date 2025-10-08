@@ -1,0 +1,14 @@
+:root{--bg:#87ceeb;--ground:#228B22;--accent:#f97316;--text:#fff}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:system-ui}
+#game{position:relative;height:100vh;background:var(--bg);display:flex;align-items:flex-end;justify-content:center;overflow:hidden}
+canvas{width:100%;height:80vh;display:block}
+#ui{position:absolute;top:12px;left:12px;right:12px;display:flex;justify-content:space-between;align-items:center;pointer-events:none}
+#score,#msg{color:var(--text);backdrop-filter:blur(4px);padding:6px 10px;border-radius:8px;background:rgba(0,0,0,0.25);pointer-events:auto}
+button{position:absolute;top:12px;padding:8px 12px;border-radius:8px;border:0;background:var(--accent);color:#fff;font-weight:700;pointer-events:auto}
+#restart{right:12px}
+#shop{right:100px}
+#shield-btn{right:200px}
+.hidden{display:none}
+#shop-menu{position:absolute;top:10%;left:10%;width:80%;height:80%;background:rgba(0,0,0,0.85);color:#fff;border-radius:16px;padding:16px;display:flex;flex-direction:column;align-items:center;overflow-y:auto}
+.skin,.shield{margin:8px;padding:8px 12px;background:#f97316;border-radius:8px;cursor:pointer}
